@@ -154,14 +154,18 @@ export default function HomePage() {
               <div className="card-luxury group relative flex flex-col items-center overflow-hidden rounded-[2rem] border border-border bg-card p-12 text-center shadow-sm">
                 <div className="pointer-events-none absolute -top-24 left-1/2 h-48 w-48 -translate-x-1/2 rounded-full bg-primary/8 blur-3xl transition-opacity duration-700 group-hover:opacity-100" />
                 {/* Character image — replace via MASCOT_IMAGES.sakhr in lib/data/images.ts */}
-                <div className="relative h-40 w-40 overflow-hidden rounded-2xl border border-border/60 shadow-sm">
-                  <Image
-                    src={MASCOT_IMAGES.sakhr}
-                    alt={t.home.sakhrName}
-                    fill
-                    sizes="160px"
-                    className="object-cover"
-                  />
+                <div className="relative">
+                  {/* Glowing aura */}
+                  <div className="char-glow absolute -inset-3 rounded-full bg-primary/20 blur-2xl" />
+                  <div className="char-float relative h-40 w-40 overflow-hidden rounded-2xl border border-border/60 shadow-sm">
+                    <Image
+                      src={MASCOT_IMAGES.sakhr}
+                      alt={t.home.sakhrName}
+                      fill
+                      sizes="160px"
+                      className="object-cover"
+                    />
+                  </div>
                 </div>
                 <h3 className="mt-8 text-2xl font-bold tracking-tight text-foreground">
                   {t.home.sakhrName}
@@ -180,14 +184,18 @@ export default function HomePage() {
               <div className="card-luxury group relative flex flex-col items-center overflow-hidden rounded-[2rem] border border-border bg-card p-12 text-center shadow-sm">
                 <div className="pointer-events-none absolute -top-24 left-1/2 h-48 w-48 -translate-x-1/2 rounded-full bg-primary/8 blur-3xl transition-opacity duration-700 group-hover:opacity-100" />
                 {/* Character image — replace via MASCOT_IMAGES.yaqoot in lib/data/images.ts */}
-                <div className="relative h-40 w-40 overflow-hidden rounded-2xl border border-border/60 shadow-sm">
-                  <Image
-                    src={MASCOT_IMAGES.yaqoot}
-                    alt={t.home.yaqootName}
-                    fill
-                    sizes="160px"
-                    className="object-cover"
-                  />
+                <div className="relative">
+                  {/* Glowing aura */}
+                  <div className="char-glow absolute -inset-3 rounded-full bg-primary/20 blur-2xl" />
+                  <div className="char-float relative h-40 w-40 overflow-hidden rounded-2xl border border-border/60 shadow-sm">
+                    <Image
+                      src={MASCOT_IMAGES.yaqoot}
+                      alt={t.home.yaqootName}
+                      fill
+                      sizes="160px"
+                      className="object-cover"
+                    />
+                  </div>
                 </div>
                 <h3 className="mt-8 text-2xl font-bold tracking-tight text-foreground">
                   {t.home.yaqootName}
