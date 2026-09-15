@@ -20,6 +20,22 @@ export const FACULTY_CAMPUS = base(35532017, 1200); // university building
 export const FACULTY_OUTCROP = base(10081281, 1200); // rock outcrop strata
 export const CONTACT_COAST = base(16668481, 1920); // coastal rock formations
 
+// Features page — museum feature highlights
+export const FEATURE_IMAGES = {
+  guides: base(8471926, 800),
+  documentation: base(13949979, 800),
+  bilingual: base(23938509, 800),
+  curated: base(256262, 800),
+  archive: base(8533045, 800),
+  navigation: base(36219579, 800),
+};
+
+// Team profile placeholders — replace with actual photos when available
+export const TEAM_IMAGES = {
+  mohammed: base(6942776, 400),
+  layan: base(33369429, 400),
+};
+
 // Faculty gallery (geological field imagery)
 export const FACULTY_GALLERY = [
   base(19786594, 800),

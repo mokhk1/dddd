@@ -19,6 +19,7 @@ export function Footer() {
   const collectionLinks = [
     { href: '/rocks', label: t.nav.rocks },
     { href: '/minerals', label: t.nav.minerals },
+    { href: '/features', label: t.nav.features },
     { href: '/featured', label: t.nav.featured },
   ];
 

@@ -5,7 +5,7 @@ import { Linkedin, Twitter, Mail } from 'lucide-react';
 import { useApp } from '@/components/providers/app-provider';
 import { PageHero } from '@/components/shared/page-hero';
 import { Reveal } from '@/components/shared/reveal';
-import { HERO_MOUNTAIN, ABOUT_FIELDWORK } from '@/lib/data/images';
+import { HERO_MOUNTAIN, ABOUT_FIELDWORK, TEAM_IMAGES } from '@/lib/data/images';
 
 const HERO_IMAGE = HERO_MOUNTAIN;
 const STORY_IMAGE = ABOUT_FIELDWORK;
@@ -20,6 +20,7 @@ export default function AboutPage() {
       linkedin: '#',
       twitter: '#',
       email: 'm.khubrani@dethar.kau.edu.sa',
+      image: TEAM_IMAGES.mohammed,
     },
     {
       name: t.about.teamMember2,
@@ -27,6 +28,7 @@ export default function AboutPage() {
       linkedin: '#',
       twitter: '#',
       email: 'l.hakmi@dethar.kau.edu.sa',
+      image: TEAM_IMAGES.layan,
     },
   ];
 
@@ -93,7 +95,7 @@ export default function AboutPage() {
             {team.map((member, i) => (
               <Reveal key={member.name} delay={i * 100}>
                 <div className="card-luxury group flex h-full flex-col items-center rounded-[2rem] border border-border bg-card p-9 text-center shadow-sm">
-                  {/* Avatar — geometric crystal/rock inspired */}
+                  {/* Profile image — replace placeholder via TEAM_IMAGES in lib/data/images.ts */}
                   <div className="relative flex h-20 w-20 items-center justify-center">
                     <div
                       className="absolute inset-0 rounded-full opacity-15 blur-2xl transition-opacity duration-700 group-hover:opacity-30"
@@ -105,15 +107,21 @@ export default function AboutPage() {
                       }}
                     />
                     <div
-                      className="relative flex h-20 w-20 items-center justify-center rounded-full text-xl font-bold text-white shadow-lg"
+                      className="relative h-20 w-20 overflow-hidden rounded-full border-2 shadow-lg"
                       style={{
-                        background:
+                        borderColor:
                           i === 0
-                            ? 'linear-gradient(135deg, hsl(var(--primary)), hsl(var(--secondary)))'
-                            : 'linear-gradient(135deg, hsl(var(--secondary)), hsl(var(--accent)))',
+                            ? 'hsl(var(--primary) / 0.4)'
+                            : 'hsl(var(--secondary) / 0.4)',
                       }}
                     >
-                      {member.name.charAt(0)}
+                      <Image
+                        src={member.image}
+                        alt={member.name}
+                        fill
+                        sizes="80px"
+                        className="object-cover"
+                      />
                     </div>
                   </div>
 

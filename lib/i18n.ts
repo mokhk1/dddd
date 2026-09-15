@@ -7,6 +7,7 @@ export const dictionary = {
       home: 'Home',
       rocks: 'Rock Collection',
       minerals: 'Mineral Collection',
+      features: 'Features',
       featured: 'Featured Specimens',
       faculty: 'Faculty of Earth Sciences',
       about: 'About',
@@ -119,6 +120,44 @@ export const dictionary = {
         crystalSystem: 'Crystal System',
         streak: 'Streak',
       },
+    },
+    features: {
+      title: 'Museum Features',
+      eyebrow: 'What Makes DETHAR Unique',
+      subtitle:
+        'Discover the tools and experiences that bring the DETHAR digital museum to life — from interactive guides to detailed scientific documentation.',
+      cards: [
+        {
+          title: 'Interactive Museum Guides',
+          description:
+            'Sakhr and Yaqoot, your personal geological companions, introduce each section of the museum with welcoming messages, fun facts, and contextual insights.',
+        },
+        {
+          title: 'Detailed Specimen Documentation',
+          description:
+            'Every specimen in the collection is documented with its scientific properties, formation history, geographic origin, and geological significance.',
+        },
+        {
+          title: 'Bilingual Experience',
+          description:
+            'The entire museum is available in both English and Arabic, with full right-to-left support, making geological heritage accessible to a wider audience.',
+        },
+        {
+          title: 'Curated Featured Highlights',
+          description:
+            'Explore hand-picked specimens across categories — museum highlights, rare finds, Saudi specimens, newest additions, and editor picks.',
+        },
+        {
+          title: 'Scientific Data Archive',
+          description:
+            'Each specimen page presents a museum-style archive table with mineralogy, hardness, luster, crystal system, streak, and more — all in one view.',
+        },
+        {
+          title: 'Seamless Navigation',
+          description:
+            'Move effortlessly between specimens with previous and next navigation, breadcrumb back-links, and a fully responsive layout for any device.',
+        },
+      ],
     },
     featured: {
       title: 'Featured Specimens',
@@ -239,6 +278,7 @@ export const dictionary = {
       home: 'الرئيسية',
       rocks: 'مجموعة الصخور',
       minerals: 'مجموعة المعادن',
+      features: 'المميزات',
       featured: 'عينات مميزة',
       faculty: 'كلية علوم الأرض',
       about: 'عن المتحف',
@@ -348,6 +388,44 @@ export const dictionary = {
         crystalSystem: 'النظام البلوري',
         streak: 'أثر المعدن',
       },
+    },
+    features: {
+      title: 'مميزات المتحف',
+      eyebrow: 'ما الذي يميّز دثار',
+      subtitle:
+        'اكتشف الأدوات والتجارب التي تمنح متحف دثار الرقمي روحه — من المرشدين التفاعليين إلى التوثيق العلمي المفصّل.',
+      cards: [
+        {
+          title: 'مرشدون تفاعليون للمتحف',
+          description:
+            'صخر وياقوت، رفيقاك الشخصيان في عالم الجيولوجيا، يقدّمان كل قسم من المتحف برسائل ترحيبية وحقائق ممتعة ورؤى سياقية.',
+        },
+        {
+          title: 'توثيق تفصيلي للعينات',
+          description:
+            'كل عينة في المجموعة موثّقة بخصائصها العلمية وتاريخ تكوّنها وموقعها الجغرافي وأهميتها الجيولوجية.',
+        },
+        {
+          title: 'تجربة ثنائية اللغة',
+          description:
+            'المتحف بأكمله متاح باللغتين الإنجليزية والعربية مع دعم كامل للكتابة من اليمين إلى اليسار، مما يجعل التراث الجيولوجي في متناول جمهور أوسع.',
+        },
+        {
+          title: 'أبرز المقتنيات المنسّقة',
+          description:
+            'استكشف عينات مختارة بعناية عبر فئات متعددة — أبرز المقتنيات، والعينات النادرة، والعينات السعودية، وأحدث الإضافات، واختيارات المحرر.',
+        },
+        {
+          title: 'أرشيف البيانات العلمية',
+          description:
+            'تعرض صفحة كل عينة جدول أرشيف بأسلوب المتاحف يشمل التركيب المعدني والصلادة والبريق والنظام البلوري وغير ذلك — في عرض واحد.',
+        },
+        {
+          title: 'تنقّل سلس',
+          description:
+            'انتقل بسهولة بين العينات عبر أزرار السابق والتالي وروابط العودة، مع تصميم متجاوب بالكامل يعمل على أي جهاز.',
+        },
+      ],
     },
     featured: {
       title: 'عينات مميزة',
