@@ -14,9 +14,9 @@ import {
 import { useApp } from '@/components/providers/app-provider';
 import { Reveal } from '@/components/shared/reveal';
 import { Counter } from '@/components/shared/counter';
-import { SakhrMascot, YaqootMascot } from '@/components/shared/mascot';
 import { GeoParticles } from '@/components/shared/geo-particles';
 import { allFeatured, allRocks, allMinerals } from '@/lib/data';
+import { MASCOT_IMAGES } from '@/lib/data/images';
 import type { Specimen } from '@/lib/data';
 import {
   HERO_MOUNTAIN,
@@ -153,7 +153,16 @@ export default function HomePage() {
             <Reveal>
               <div className="card-luxury group relative flex flex-col items-center overflow-hidden rounded-[2rem] border border-border bg-card p-12 text-center shadow-sm">
                 <div className="pointer-events-none absolute -top-24 left-1/2 h-48 w-48 -translate-x-1/2 rounded-full bg-primary/8 blur-3xl transition-opacity duration-700 group-hover:opacity-100" />
-                <SakhrMascot size={150} className="relative" />
+                {/* Character image — replace via MASCOT_IMAGES.sakhr in lib/data/images.ts */}
+                <div className="relative h-40 w-40 overflow-hidden rounded-2xl border border-border/60 shadow-sm">
+                  <Image
+                    src={MASCOT_IMAGES.sakhr}
+                    alt={t.home.sakhrName}
+                    fill
+                    sizes="160px"
+                    className="object-cover"
+                  />
+                </div>
                 <h3 className="mt-8 text-2xl font-bold tracking-tight text-foreground">
                   {t.home.sakhrName}
                 </h3>
@@ -169,12 +178,21 @@ export default function HomePage() {
             {/* Yaqoot */}
             <Reveal delay={120}>
               <div className="card-luxury group relative flex flex-col items-center overflow-hidden rounded-[2rem] border border-border bg-card p-12 text-center shadow-sm">
-                <div className="pointer-events-none absolute -top-24 left-1/2 h-48 w-48 -translate-x-1/2 rounded-full bg-secondary/12 blur-3xl transition-opacity duration-700 group-hover:opacity-100" />
-                <YaqootMascot size={150} className="relative" />
+                <div className="pointer-events-none absolute -top-24 left-1/2 h-48 w-48 -translate-x-1/2 rounded-full bg-primary/8 blur-3xl transition-opacity duration-700 group-hover:opacity-100" />
+                {/* Character image — replace via MASCOT_IMAGES.yaqoot in lib/data/images.ts */}
+                <div className="relative h-40 w-40 overflow-hidden rounded-2xl border border-border/60 shadow-sm">
+                  <Image
+                    src={MASCOT_IMAGES.yaqoot}
+                    alt={t.home.yaqootName}
+                    fill
+                    sizes="160px"
+                    className="object-cover"
+                  />
+                </div>
                 <h3 className="mt-8 text-2xl font-bold tracking-tight text-foreground">
                   {t.home.yaqootName}
                 </h3>
-                <span className="mt-2 inline-flex w-fit items-center rounded-full bg-secondary/15 px-3.5 py-1 text-xs font-semibold uppercase tracking-wide text-secondary-foreground">
+                <span className="mt-2 inline-flex w-fit items-center rounded-full bg-primary/10 px-3.5 py-1 text-xs font-semibold uppercase tracking-wide text-primary">
                   {t.home.yaqootRole}
                 </span>
                 <p className="mt-5 max-w-xs text-base leading-relaxed text-muted-foreground">

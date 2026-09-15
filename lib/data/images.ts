@@ -30,6 +30,12 @@ export const FEATURE_IMAGES = {
   navigation: base(36219579, 800),
 };
 
+// Character mascots — replace placeholder URLs with custom character art when ready
+export const MASCOT_IMAGES = {
+  sakhr: base(8471926, 600),
+  yaqoot: base(8471961, 600),
+};
+
 // Team profile placeholders — replace with actual photos when available
 export const TEAM_IMAGES = {
   mohammed: base(6942776, 400),
