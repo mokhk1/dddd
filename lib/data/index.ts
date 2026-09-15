@@ -36,10 +36,6 @@ export function searchSpecimens(
   );
 }
 
-export function featuredByTag(tag: string): Specimen[] {
-  return [...rocks, ...minerals].filter((s) => s.tags?.includes(tag));
-}
-
 export function allFeatured(): Specimen[] {
   return [...rocks, ...minerals].filter((s) =>
     s.tags?.some((t) =>

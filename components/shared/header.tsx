@@ -34,7 +34,6 @@ export function Header() {
     { href: '/rocks', label: t.nav.rocks },
     { href: '/minerals', label: t.nav.minerals },
     { href: '/features', label: t.nav.features },
-    { href: '/featured', label: t.nav.featured },
     { href: '/faculty', label: t.nav.faculty },
     { href: '/about', label: t.nav.about },
     { href: '/contact', label: t.nav.contact },

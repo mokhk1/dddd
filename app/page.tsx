@@ -237,16 +237,6 @@ export default function HomePage() {
               );
             })}
           </div>
-
-          <Reveal className="mt-12">
-            <Link
-              href="/featured"
-              className="group inline-flex items-center gap-2 text-sm font-semibold text-primary transition-all hover:gap-3"
-            >
-              {t.home.featuredLink}
-              <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1 rtl:rotate-180" />
-            </Link>
-          </Reveal>
         </div>
       </section>
 

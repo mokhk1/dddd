@@ -8,7 +8,6 @@ export const dictionary = {
       rocks: 'Rock Collection',
       minerals: 'Mineral Collection',
       features: 'Features',
-      featured: 'Featured Specimens',
       faculty: 'Faculty of Earth Sciences',
       about: 'About',
       contact: 'Contact',
@@ -159,19 +158,6 @@ export const dictionary = {
         },
       ],
     },
-    featured: {
-      title: 'Featured Specimens',
-      eyebrow: 'Museum Highlights',
-      subtitle:
-        'Rare specimens, Saudi highlights, newest additions, and editor picks from the DETHAR collection.',
-      tabs: {
-        highlights: 'Museum Highlights',
-        rare: 'Rare Specimens',
-        saudi: 'Saudi Specimens',
-        newest: 'Newest Additions',
-        picks: "Editor's Picks",
-      },
-    },
     faculty: {
       title: 'Faculty of Earth Sciences',
       eyebrow: 'King Abdulaziz University',
@@ -279,7 +265,6 @@ export const dictionary = {
       rocks: 'مجموعة الصخور',
       minerals: 'مجموعة المعادن',
       features: 'المميزات',
-      featured: 'عينات مميزة',
       faculty: 'كلية علوم الأرض',
       about: 'عن المتحف',
       contact: 'تواصل معنا',
@@ -426,18 +411,6 @@ export const dictionary = {
             'انتقل بسهولة بين العينات عبر أزرار السابق والتالي وروابط العودة، مع تصميم متجاوب بالكامل يعمل على أي جهاز.',
         },
       ],
-    },
-    featured: {
-      title: 'عينات مميزة',
-      eyebrow: 'أبرز المقتنيات',
-      subtitle: 'عينات نادرة، وأخرى سعودية، وإضافات حديثة، واختيارات المحرر من مجموعة دثار.',
-      tabs: {
-        highlights: 'أبرز المقتنيات',
-        rare: 'عينات نادرة',
-        saudi: 'عينات سعودية',
-        newest: 'أحدث الإضافات',
-        picks: 'اختيارات المحرر',
-      },
     },
     faculty: {
       title: 'كلية علوم الأرض',
