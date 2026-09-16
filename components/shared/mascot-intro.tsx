@@ -1,8 +1,9 @@
 'use client';
 
+import Image from 'next/image';
 import { useApp } from '@/components/providers/app-provider';
-import { SakhrMascot, YaqootMascot } from '@/components/shared/mascot';
 import { Reveal } from '@/components/shared/reveal';
+import { MASCOT_IMAGES } from '@/lib/data/images';
 import { cn } from '@/lib/utils';
 
 type MascotIntroProps = {
@@ -13,10 +14,10 @@ type MascotIntroProps = {
 export function MascotIntro({ mascot, className }: MascotIntroProps) {
   const { t, locale } = useApp();
   const isSakhr = mascot === 'sakhr';
-  const Mascot = isSakhr ? SakhrMascot : YaqootMascot;
   const name = isSakhr ? t.home.sakhrName : t.home.yaqootName;
   const role = isSakhr ? t.home.sakhrRole : t.home.yaqootRole;
   const welcome = isSakhr ? t.home.sakhrWelcome : t.home.yaqootWelcome;
+  const image = isSakhr ? MASCOT_IMAGES.sakhr : MASCOT_IMAGES.yaqoot;
 
   return (
     <Reveal className={cn('mb-20 sm:mb-24', className)}>
@@ -36,9 +37,17 @@ export function MascotIntro({ mascot, className }: MascotIntroProps) {
         />
 
         <div className="relative flex flex-col items-center gap-6 sm:flex-row sm:items-center sm:gap-8">
-          {/* Mascot */}
+          {/* Character image — replace via MASCOT_IMAGES in lib/data/images.ts */}
           <div className="flex shrink-0 flex-col items-center gap-3">
-            <Mascot size={120} />
+            <div className="relative h-28 w-28 overflow-hidden rounded-2xl border border-border/60 shadow-sm">
+              <Image
+                src={image}
+                alt={name}
+                fill
+                sizes="112px"
+                className="object-cover"
+              />
+            </div>
             <div className="text-center">
               <p className="text-base font-bold tracking-tight text-foreground">
                 {name}
