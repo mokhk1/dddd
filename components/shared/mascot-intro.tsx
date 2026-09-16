@@ -39,14 +39,18 @@ export function MascotIntro({ mascot, className }: MascotIntroProps) {
         <div className="relative flex flex-col items-center gap-6 sm:flex-row sm:items-center sm:gap-8">
           {/* Character image — replace via MASCOT_IMAGES in lib/data/images.ts */}
           <div className="flex shrink-0 flex-col items-center gap-3">
-            <div className="relative h-28 w-28 overflow-hidden rounded-2xl border border-border/60 shadow-sm">
-              <Image
-                src={image}
-                alt={name}
-                fill
-                sizes="112px"
-                className="object-cover"
-              />
+            <div className="relative">
+              {/* Glowing aura */}
+              <div className="char-glow absolute -inset-2 rounded-2xl bg-primary/20 blur-xl" />
+              <div className="char-float relative h-28 w-28 overflow-hidden rounded-2xl border border-border/60 shadow-sm">
+                <Image
+                  src={image}
+                  alt={name}
+                  fill
+                  sizes="112px"
+                  className="object-cover"
+                />
+              </div>
             </div>
             <div className="text-center">
               <p className="text-base font-bold tracking-tight text-foreground">
